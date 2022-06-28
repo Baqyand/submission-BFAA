@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SubMissionTwo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name">Name</string>
+    <string name="company">Company</string>
+    <string name="user_url">User Url</string>
+    <string name="location">Location</string>
+    <string name="bang_github">Bang GitHub</string>
+    <string name="github_detail">Github Detail</string>
+    <string name="username">username</string>
+    <string name="repository">repository</string>
+    <string name="followers">followers</string>
+    <string name="following">following</string>
+    <string name="todo">TODO</string>
+    <string name="tidak_ada_follower">Tidak ada follower</string>
+    <string name="noOneFollowingByU">Tidak ada following</string>
+    <string name="tidak_ada_data">Tidak ada data</string>
+</resources>
