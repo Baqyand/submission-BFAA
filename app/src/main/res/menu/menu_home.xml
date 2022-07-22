@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:menuCategory="container">
+        <item
+            android:id="@+id/favorite_menu"
+            android:icon="@drawable/ic_baseline_favorite_border_24"
+            android:title="@string/fav"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/background_menu"
+            android:title="@string/change_background"
+            android:icon="@drawable/ic_baseline_wb_sunny_24"
+            app:showAsAction="always"
+            />
+    </group>
+</menu>

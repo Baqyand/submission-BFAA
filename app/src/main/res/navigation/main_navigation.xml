@@ -7,17 +7,17 @@
 
     <activity
         android:id="@+id/splashScreenActivity"
-        android:name="co.id.baqyandproject.submissiontwo.modul.splash.SplashScreenActivity"
+        android:name="co.id.baqyandproject.submissionthree.modul.splash.SplashScreenActivity"
         android:label="activity_splash_screen"
         tools:layout="@layout/activity_splash_screen" />
     <activity
         android:id="@+id/mainActivity"
-        android:name="co.id.baqyandproject.submissiontwo.modul.main.MainActivity"
+        android:name="co.id.baqyandproject.submissionthree.modul.main.MainActivity"
         android:label="activity_main"
         tools:layout="@layout/activity_main" />
     <activity
         android:id="@+id/userDetailActivity"
-        android:name="co.id.baqyandproject.submissiontwo.modul.detail.UserDetailActivity"
+        android:name="co.id.baqyandproject.submissionthree.modul.detail.UserDetailActivity"
         android:label="activity_user_detail"
         tools:layout="@layout/activity_user_detail" />
 </navigation>

@@ -16,4 +16,9 @@
     <string name="tidak_ada_follower">Tidak ada follower</string>
     <string name="noOneFollowingByU">Tidak ada following</string>
     <string name="tidak_ada_data">Tidak ada data</string>
+    <string name="add_favorite">add favorite</string>
+    <string name="fav">Fav</string>
+    <string name="change_background">Change Background</string>
+    <string name="share_user">Share User</string>
+    <string name="delete">Delete</string>
 </resources>

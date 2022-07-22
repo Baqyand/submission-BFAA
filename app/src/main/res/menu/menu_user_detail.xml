@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/share_user_menu"
+        android:icon="@drawable/ic_baseline_share_24"
+        android:title="@string/share_user"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/delete_menu"
+        android:icon="@drawable/ic_baseline_delete_24"
+        android:title="@string/delete"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/background_menu"
+        android:icon="@drawable/ic_baseline_wb_sunny_24"
+        android:title="@string/change_background"
+        app:showAsAction="ifRoom" />
+</menu>

@@ -15,6 +15,8 @@ android {
         versionCode 1
         versionName "1.0"
 
+        buildConfigField("String", "KEY", '"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"')
+
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -48,24 +50,31 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     //navigation
-    implementation 'androidx.navigation:navigation-fragment-ktx:2.4.2'
-    implementation 'androidx.navigation:navigation-ui-ktx:2.4.2'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.0'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.5.0'
+
+    //viewModels
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.5.0"
+    implementation "androidx.activity:activity-ktx:1.5.0"
 
     // DI
-    implementation "com.google.dagger:hilt-android:$hilt_version"
-    kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
-
-    implementation "androidx.hilt:hilt-lifecycle-viewmodel:$androidx_hilt_version"
-    kapt "androidx.hilt:hilt-compiler:$androidx_hilt_version"
+    implementation "com.google.dagger:hilt-android:2.42"
+    kapt 'com.google.dagger:hilt-android-compiler:2.42'
+    kapt "androidx.hilt:hilt-compiler:1.0.0"
 
     // Glide
-    implementation 'com.github.bumptech.glide:glide:4.13.0'
-    kapt 'com.github.bumptech.glide:compiler:4.13.0'
+    implementation 'com.github.bumptech.glide:glide:4.13.2'
+    kapt 'com.github.bumptech.glide:compiler:4.13.2'
 
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation "com.squareup.retrofit2:converter-gson:2.9.0"
-    implementation "com.squareup.okhttp3:logging-interceptor:4.9.3"
+    implementation "com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.9"
 
-//    implementation "androidx.viewpager2:viewpager2:1.0.0"
+    //kotlin database
+    implementation 'androidx.room:room-runtime:2.4.2'
+    implementation 'androidx.room:room-ktx:2.4.2'
+    kapt 'androidx.room:room-compiler:2.4.2'
+    implementation "androidx.datastore:datastore-preferences:1.0.0"
 
 }

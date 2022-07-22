@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".modul.favorite.FavoriteActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/rl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                style="@style/toolbarbg"
+                android:layout_alignParentTop="true"
+                />
+
+            <TextView
+                style="@style/textContent"
+                android:layout_centerInParent="true"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="@string/bang_github"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_usersGithub"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rl_toolbar" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_noData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rl_toolbar">
+
+        <TextView
+            android:id="@+id/tv_text_header"
+            style="@style/textContent"
+            android:gravity="center"
+            android:text="@string/tidak_ada_data"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/ic_alert_failed" />
+
+        <TextView
+            android:id="@+id/textMessage"
+            style="@style/textContent"
+            android:gravity="center"
+            android:text="@string/noOneFollowingByU" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
